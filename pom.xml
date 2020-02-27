@@ -32,6 +32,13 @@
 			<version>2.2.4.RELEASE</version>
 		</dependency>
 
+		<!-- 引入log4j日志依赖 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-log4j</artifactId>
+			<version>1.3.8.RELEASE</version>
+		</dependency>
+
 
 		<!-- 要先引入依赖坐标位置 -->
 		<!-- devtools可以实现页面的热部署，即页面修改后会立即生效，这个可以 直接在application.properties文件中配置spring.thymeleaf.cache=false来实现 -->
@@ -61,11 +68,66 @@
 			<version>2.2.4.RELEASE</version>
 		</dependency>
 
-        <!-- 引入thymeleaf模板引擎的依赖坐标 -->
+		<!-- 引入thymeleaf模板引擎的依赖坐标 -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-thymeleaf</artifactId>
 			<version>2.2.4.RELEASE</version>
+		</dependency>
+
+		<!-- 引入阿里巴巴数据源坐标 -->
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>druid</artifactId>
+			<version>1.1.0</version>
+		</dependency>
+
+		<!-- 引入mysql驱动坐标 -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>8.0.11</version>
+		</dependency>
+
+		<!-- 整合mybatis所需要的依赖坐标3个 -->
+		<dependency>
+			<groupId>org.mybatis.spring.boot</groupId>
+			<artifactId>mybatis-spring-boot-starter</artifactId>
+			<version>1.3.1</version>
+		</dependency>
+		<!--mapper -->
+		<dependency>
+			<groupId>tk.mybatis</groupId>
+			<artifactId>mapper-spring-boot-starter</artifactId>
+			<version>1.2.4</version>
+		</dependency>
+		<!--pagehelper -->
+		<dependency>
+			<groupId>com.github.pagehelper</groupId>
+			<artifactId>pagehelper-spring-boot-starter</artifactId>
+			<version>1.2.3</version>
+		</dependency>
+
+		<!-- 自动生成文件所需要的依赖坐标 -->
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>druid-spring-boot-starter</artifactId>
+			<version>1.1.13</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.mybatis.generator</groupId>
+			<artifactId>mybatis-generator-core</artifactId>
+			<version>1.3.2</version>
+			<scope>compile</scope>
+			<optional>true</optional>
+		</dependency>
+
+        <!-- Mybatis和spring的整合包 -->
+		<dependency>
+			<groupId>org.mybatis</groupId>
+			<artifactId>mybatis-spring</artifactId>
+			<version>2.0.3</version>
 		</dependency>
 
 	</dependencies>
