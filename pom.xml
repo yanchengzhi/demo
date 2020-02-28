@@ -123,11 +123,18 @@
 			<optional>true</optional>
 		</dependency>
 
-        <!-- Mybatis和spring的整合包 -->
+		<!-- Mybatis和spring的整合包 -->
 		<dependency>
 			<groupId>org.mybatis</groupId>
 			<artifactId>mybatis-spring</artifactId>
 			<version>2.0.3</version>
+		</dependency>
+		
+		<!-- 引入Redis的依赖坐标 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-redis</artifactId>
+			<version>2.2.4.RELEASE</version>
 		</dependency>
 
 	</dependencies>
